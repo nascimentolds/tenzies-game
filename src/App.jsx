@@ -46,9 +46,29 @@ function App() {
   function holdDice(id) {
     setDice(
       dice.map((item) => {
-        return item.id === id ? { ...item, isHeld: true } : item;
+        if (item.id === id) {
+          if (firstDieHeld() === item.value || firstDieHeld() === null){
+            return { ...item, isHeld: true }
+          }
+         return item
+        } else {
+          return item
+        }
       })
     );
+  }
+
+  function firstDieHeld() {
+    let firstHeldDieValue = null;
+
+    for (let i = 0; i < dice.length; i++) {
+      if (dice[i].isHeld) {
+        firstHeldDieValue = dice[i].value;
+        break;
+      }
+    }
+
+    return firstHeldDieValue;
   }
 
   function newgame() {
