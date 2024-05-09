@@ -6,6 +6,7 @@ This is a solution to the [Tenzies Game on Scrimba](https://scrimba.com/learn/le
 
 - [Overview](#overview)
   - [Requirements](#requirements)
+  - [Todo](#todo)
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Getting Started with Create React App](#getting-started-with-create-react-app)
@@ -26,6 +27,12 @@ This is a solution to the [Tenzies Game on Scrimba](https://scrimba.com/learn/le
   - Control the rendering of a visual effect (confetti) when the game is completed.
   - Display instructions to the player.
   - Provide interaction with the dice through clicks.
+
+### Todo
+
+  - Track the number of rolls.
+  - Track the time it took to win the game.
+  - Save your best time to localStorage.
 
 ### Screenshot
 
